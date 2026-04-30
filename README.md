@@ -1,174 +1,195 @@
-# Image Editor
+# 🎨 Image Editor
 
-Image Editor je webová aplikácia na jednoduchú úpravu obrázkov priamo v prehliadači. Používateľ môže nahrať obrázok, upraviť ho pomocou filtrov a nástrojov, porovnať pôvodnú a upravenú verziu a následne výsledok uložiť alebo exportovať.
+Moderný webový editor obrázkov, ktorý funguje **priamo v prehliadači**.
+Umožňuje rýchlo upraviť fotku, aplikovať filtre, kresliť do obrázka a exportovať výsledok bez potreby inštalácie.
 
-## Ako spustiť projekt
+---
 
-Projekt sa spúšťa otvorením súboru `index.html` v prehliadači.
+## 🚀 Spustenie projektu
 
-Aplikácia funguje lokálne a nevyžaduje databázu ani server.
+Stačí otvoriť súbor:
 
-## Základné používanie
+```
+index.html
+```
 
-Po otvorení stránky sa zobrazí editor obrázkov. V strede stránky je pracovná plocha, naľavo sa nachádza panel nástrojov, napravo panel úprav a v spodnej časti sú filtre.
+👉 Všetko funguje lokálne – žiadny server ani databáza nie sú potrebné.
 
-Používateľ najskôr klikne na tlačidlo **Open** alebo presunie obrázok do pracovnej plochy. Po načítaní obrázka môže použiť jednotlivé nástroje a následne obrázok uložiť.
+---
 
-## Tlačidlá v hornej časti
+## 🧭 Ako aplikácia funguje
 
-### Späť
+Po otvorení stránky sa zobrazí editor:
 
-Tlačidlo **Späť** slúži na návrat na hlavný portál.
+* 🖼️ stred – pracovná plocha (canvas)
+* 🛠️ ľavá strana – nástroje
+* 🎛️ pravá strana – úpravy (slidery)
+* 🎞️ spodok – filtre
 
-### Open
+Najprv je potrebné nahrať obrázok pomocou tlačidla **Open** alebo drag & drop.
 
-Tlačidlo **Open** otvorí výber súboru z počítača. Používateľ si vyberie obrázok, ktorý sa následne zobrazí v editore.
+---
 
-### Save
+## 🔝 Horný panel (hlavné tlačidlá)
 
-Tlačidlo **Save** uloží aktuálne upravený obrázok ako PNG súbor s názvom `image-save.png`.
+### 🔙 Späť
 
-### Export
+Vracia používateľa späť na hlavný portál.
 
-Tlačidlo **Export** exportuje aktuálne upravený obrázok ako PNG súbor s názvom `image-export.png`.
+### 📂 Open
 
-## Nástroje na ľavej strane
+Otvorí výber súboru a načíta obrázok do editora.
 
-### Adjust
+### 💾 Save
 
-Nástroj **Adjust** slúži na základné úpravy obrázka pomocou posuvníkov v pravom paneli.
+Uloží obrázok ako:
 
-### Filters
+```
+image-save.png
+```
 
-Nástroj **Filters** slúži na výber prednastavených filtrov v spodnej časti stránky.
+### 📤 Export
 
-### Crop
+Exportuje obrázok ako:
 
-Nástroj **Crop** oreže obrázok na štvorec podľa kratšej strany obrázka.
+```
+image-export.png
+```
 
-### Transform
+---
 
-Nástroj **Transform** otočí obrázok o 90 stupňov.
+## 🛠️ Nástroje (ľavý panel)
 
-### Draw
+### 🎚️ Adjust
 
-Nástroj **Draw** umožňuje kresliť priamo do obrázka myšou.
+Základné úpravy cez slidery (jas, kontrast atď.)
 
-### Text
+### 🎨 Filters
 
-Nástroj **Text** umožňuje vložiť vlastný text do obrázka.
+Použitie prednastavených filtrov
 
-### Stickers
+### ✂️ Crop
 
-Nástroj **Stickers** vloží do obrázka náhodnú dekoratívnu nálepku.
+Oreže obrázok na štvorec zo stredu
 
-### Blur
+### 🔄 Transform
 
-Nástroj **Blur** rozmaže aktuálny obrázok.
+Otočí obrázok o 90°
 
-### Remove BG
+### ✏️ Draw
 
-Nástroj **Remove BG** sa pokúsi odstrániť pozadie obrázka. Funguje najlepšie pri jednoduchom jednofarebnom pozadí.
+Umožňuje kresliť myšou priamo do obrázka
 
-## AI Enhance
+### 🔤 Text
 
-Tlačidlo **AI Enhance** automaticky nastaví viacero úprav naraz. Zvýši jas, kontrast, sýtosť, tiene a ostrosť obrázka.
+Pridá text do obrázka
 
-V tejto verzii nejde o skutočnú umelú inteligenciu, ale o prednastavené automatické vylepšenie obrázka jedným kliknutím.
+### ⭐ Stickers
 
-## Pracovná plocha
+Pridá náhodnú nálepku
 
-V strede stránky sa nachádza hlavné plátno, na ktorom sa zobrazuje obrázok. Pred nahratím obrázka sa zobrazí výzva na vloženie obrázka.
+### 🌫️ Blur
 
-Po nahratí sa zobrazí aj rozlíšenie obrázka.
+Rozmaže obrázok
 
-## Zoom
+### 🧠 Remove BG
 
-Tlačidlo **+** obrázok priblíži.
+Odstráni pozadie (najlepšie pri jednoduchom pozadí)
 
-Tlačidlo **−** obrázok oddiali.
+---
 
-Tlačidlo **Fit** vráti priblíženie späť na 100 %.
+## ⚡ AI Enhance
 
-## Before / After
+Automaticky vylepší obrázok:
 
-Tlačidlo **Before / After** zapne porovnanie pôvodnej a upravenej verzie obrázka. Po zapnutí sa zobrazí deliaca čiara, ktorú je možné posúvať.
+* jas ☀️
+* kontrast 🔳
+* sýtosť 🎨
+* ostrosť 🔍
 
-## Pravý panel úprav
+---
 
-### Brightness
+## 🖼️ Pracovná plocha
 
-Mení jas obrázka.
+Zobrazuje obrázok a jeho rozlíšenie. Pred načítaním zobrazí výzvu na vloženie obrázka.
 
-### Contrast
+---
 
-Mení kontrast obrázka.
+## 🔍 Zoom
 
-### Saturation
+* ➕ priblíženie
+* ➖ oddialenie
+* 📐 Fit → návrat na 100%
 
-Mení sýtosť farieb.
+---
 
-### Highlights
+## 🔄 Before / After
 
-Upravuje svetlé časti obrázka.
+Porovnanie pôvodného a upraveného obrázka pomocou posuvnej čiary.
 
-### Shadows
+---
 
-Upravuje tmavé časti obrázka.
+## 🎛️ Pravý panel (úpravy)
 
-### Sharpness
+* ☀️ Brightness – jas
+* 🔳 Contrast – kontrast
+* 🎨 Saturation – sýtosť
+* 🌤️ Highlights – svetlá
+* 🌑 Shadows – tiene
+* 🔍 Sharpness – ostrosť
+* 🔄 Reset – návrat na pôvodné nastavenie
 
-Upravuje ostrosť obrázka.
+---
 
-### Reset
+## 📊 Histogram
 
-Tlačidlo **Reset** vráti všetky hodnoty úprav na pôvodné nastavenie.
+Zobrazuje rozloženie farieb:
 
-## Histogram
+* 🔴 R
+* 🟢 G
+* 🔵 B
 
-Histogram zobrazuje rozloženie farieb v obrázku podľa kanálov:
+---
 
-- R – červená
-- G – zelená
-- B – modrá
+## ℹ️ Info panel
 
-Histogram sa mení podľa aktuálnych úprav obrázka.
+Zobrazuje:
 
-## Info panel
+* 📏 rozlíšenie
+* 💾 veľkosť
+* 🖼️ formát
+* 🕒 čas načítania
 
-Panel **Info** zobrazuje základné informácie o nahratom obrázku:
+---
 
-- rozlíšenie,
-- veľkosť súboru,
-- formát,
-- čas vloženia obrázka do editora.
+## 🎞️ Filtre
 
-## Filtre
+Dostupné kategórie:
 
-V spodnej časti stránky sa nachádzajú prednastavené filtre. Po kliknutí na filter sa automaticky upravia hodnoty jasu, kontrastu, sýtosti, tieňov, svetiel a ostrosti.
+* ⭐ Popular
+* 🎬 Cinematic
+* 🌿 Nature
+* ⚫ Black & White
+* 👤 Portrait
+* 🧓 Vintage
+* 🌙 Moody
 
-Dostupné kategórie filtrov sú napríklad:
+---
 
-- All Filters
-- Popular
-- Cinematic
-- Nature
-- Black & White
-- Portrait
-- Vintage
-- Moody
+## 🧰 Použité technológie
 
-## Technológie
+* HTML
+* CSS
+* JavaScript
+* Canvas API
 
-Projekt je vytvorený pomocou:
+---
 
-- HTML
-- CSS
-- JavaScript
-- Canvas API
+## ✅ Zhrnutie
 
-Všetky úpravy obrázka prebiehajú lokálne v prehliadači.
+✔️ nahraješ obrázok
+✔️ upravíš ho
+✔️ porovnáš výsledok
+✔️ exportuješ
 
-## Zhrnutie
-
-Image Editor umožňuje nahrať obrázok, upraviť ho pomocou filtrov a nástrojov, porovnať pôvodnú a upravenú verziu a výsledok uložiť ako PNG súbor.
+👉 všetko priamo v prehliadači
